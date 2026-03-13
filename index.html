@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>DEBT IS BEHAVIORAL. — Lula (clone)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0f1724; --accent:#ff6b6b; --muted:#94a3b8; --card:#0b1220; --glass:rgba(255,255,255,0.04);
+    --maxw:1100px;
+  }
+  *{box-sizing:border-box;font-family:Inter,system-ui,Arial,sans-serif}
+  body{margin:0;background:linear-gradient(180deg,#071028 0%, #071a2a 60%);color:#e6eef8;line-height:1.45}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:28px}
+  header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+  .brand{font-weight:900;letter-spacing:0.6px}
+  nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:500}
+  .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start;padding:48px 0}
+  .hero h1{font-size:48px;margin:0 0 12px;line-height:1.02}
+  .hero p{color:var(--muted);margin:0 0 20px}
+  .btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+  .btn-primary{background:linear-gradient(90deg,var(--accent),#ff8a8a);color:#071022}
+  .btn-ghost{border:1px solid rgba(255,255,255,0.06);color:var(--muted);background:transparent}
+  .stats{display:flex;gap:18px;margin-top:22px}
+  .stat{background:var(--glass);padding:18px;border-radius:12px;min-width:110px;text-align:center}
+  .stat .num{font-weight:800;font-size:20px;color:#fff}
+  .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px}
+  .how{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:36px 0}
+  .how .step{background:var(--card);padding:18px;border-radius:10px}
+  .quiz{display:flex;gap:18px;align-items:center;padding:18px;background:rgba(255,255,255,0.02);border-radius:12px}
+  footer{margin-top:40px;padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid rgba(255,255,255,0.02)}
+  @media(max-width:900px){
+    .hero{grid-template-columns:1fr; }
+    .how{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">Lula</div>
+      <nav>
+        <a href="#">How It Works</a>
+        <a href="#">Debt Discount Lottery</a>
+        <a href="#">The Sponsor</a>
+        <a href="#" class="btn btn-ghost">Take the Quiz</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>DEBT IS BEHAVIORAL.</h1>
+        <p><strong>Master your impulses. Join the mission. Reclaim your future with AI-driven social support and physical discipline.</strong></p>
+        <a class="btn btn-primary" href="#">Start Mission</a>
+        <a class="btn btn-ghost" href="#" style="margin-left:12px">How It Works</a>
+
+        <div class="stats" aria-hidden="true">
+          <div class="stat card"><div class="num">10M+</div><div class="muted">South Africans Over-Indebted</div></div>
+          <div class="stat card"><div class="num">87%</div><div class="muted">Behaviorally Driven</div></div>
+          <div class="stat card"><div class="num">0%</div><div class="muted">Call Centre Answer Rate</div></div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 style="margin-top:0">Lead Magnet · Free Assessment</h3>
+        <p class="muted" style="color:var(--muted)">Answer 5 questions. Discover your debt personality type.</p>
+        <div style="margin-top:12px">
+          <a class="btn btn-primary" href="#">Reveal My Debt Type</a>
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <h2 style="margin:0 0 12px">How It Works</h2>
+      <div class="how">
+        <div class="step">
+          <h4>01 The Circle</h4>
+          <p>AI-matched, location-based accountability groups — your personal 12-step circle for financial recovery.</p>
+        </div>
+        <div class="step">
+          <h4>02 The Sponsor</h4>
+          <p>A 24/7 Agentic AI Coach trained on South African Credit Law and Behavioral Science, available on WhatsApp.</p>
+        </div>
+        <div class="step">
+          <h4>03 The Mission</h4>
+          <p>AR Superhero bootcamp that turns your park into a training ground — physical discipline as proxy for financial discipline.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz">
+      <div style="flex:1">
+        <strong>How Behavioral Is Your Debt?</strong>
+        <div style="color:var(--muted)">Answer 5 questions to reveal your type (0/5 answered)</div>
+      </div>
+      <div><a class="btn btn-primary" href="#">Take the Quiz</a></div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap">
+        <div>© 2026 Lula. All rights reserved. Operated in compliance with the National Credit Act 34 of 2005.</div>
+        <div style="color:var(--muted)">hello@lula.co.za</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
