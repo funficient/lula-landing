@@ -1,0 +1,81 @@
+:root {
+  --bg:#0f1724; --accent:#ff6b6b; --muted:#94a3b8; --card:#0b1220; --glass:rgba(255,255,255,0.04);
+  --maxw:1100px;
+}
+
+* { box-sizing:border-box; font-family:Inter,system-ui,Arial,sans-serif }
+
+body {
+  margin:0;
+  background:linear-gradient(180deg,#071028 0%, #071a2a 60%);
+  color:#e6eef8;
+  line-height:1.45;
+}
+
+.wrap { max-width:var(--maxw); margin:0 auto; padding:28px }
+
+header {
+  display:flex; align-items:center; justify-content:space-between; padding:12px 0;
+}
+
+.brand { font-weight:900; letter-spacing:0.6px }
+
+nav a {
+  color:var(--muted); text-decoration:none; margin-left:18px; font-weight:500;
+}
+
+.hero {
+  display:grid; grid-template-columns:1fr 360px; gap:28px; align-items:start; padding:48px 0;
+}
+
+.hero h1 {
+  font-size:48px; margin:0 0 12px; line-height:1.02;
+}
+
+.hero p { color:var(--muted); margin:0 0 20px }
+
+.btn {
+  display:inline-block; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:700;
+}
+
+.btn-primary {
+  background:linear-gradient(90deg,var(--accent),#ff8a8a); color:#071022;
+}
+
+.btn-ghost {
+  border:1px solid rgba(255,255,255,0.06); color:var(--muted); background:transparent;
+}
+
+.stats { display:flex; gap:18px; margin-top:22px }
+
+.stat {
+  background:var(--glass); padding:18px; border-radius:12px; min-width:110px; text-align:center;
+}
+
+.stat .num { font-weight:800; font-size:20px; color:#fff }
+
+.card {
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding:18px; border-radius:12px;
+}
+
+.how {
+  display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:36px 0;
+}
+
+.how .step { background:var(--card); padding:18px; border-radius:10px }
+
+.quiz {
+  display:flex; gap:18px; align-items:center; padding:18px;
+  background:rgba(255,255,255,0.02); border-radius:12px;
+}
+
+footer {
+  margin-top:40px; padding:28px 0; color:var(--muted); font-size:14px;
+  border-top:1px solid rgba(255,255,255,0.02);
+}
+
+@media(max-width:900px) {
+  .hero { grid-template-columns:1fr }
+  .how { grid-template-columns:1fr }
+}
