@@ -797,3 +797,13 @@ footer {
   text-align: left;
 }
 
+
+/* New */
+
+.assessment-box {
+  width: 800px;
+  height: max-content;
+  padding: 2rem;
+  border: 1px solid rgba(187,185,185,1);
+  align-items: left;
+}
