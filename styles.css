@@ -63,6 +63,12 @@ h2 {
   padding: 0 2rem;
 }
 
+.two-column {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
 .section-light {
   background: white;
   color: black;
@@ -387,21 +393,23 @@ footer {
 .step {
   display: flex;
   padding: 20px 20px;
-
+  align-items: center;
+  gap: 1rem;
 }
 .step-num {
   width: 125px;
   color: rgba(255,255,255,0.5);
   font-weight: 800;
   font-size: 72px;
-  text-align: left;
+  text-align: right;
+  flex-shrink: 0;
 }
 
 .step-content {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  margin: auto;
+  align-items: flex-start;
+  margin-left: 0;
 }
 
 .step-title {
@@ -486,10 +494,27 @@ footer {
   flex-direction: row;
 }
 
-.column-left, .column-right {
-  width: 45%;
+.column-left {
+  width: 60%;
+  text-align: left;
+}
+
+.column-right {
+  width: 40%;
+  text-align: left;
 }
 .column-right {
   align-items: center;
-  
+  padding-top: 3rem;
+}
+
+.incentive-section .content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.incentive-section .column-right .step-content {
+  align-items: flex-start;
+  margin: 0;
 }
